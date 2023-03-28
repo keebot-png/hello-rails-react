@@ -3,12 +3,12 @@
 // import "./controllers"
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-function App() {
-  return (<h1>Hello World!</h1>);
-}
-
+import App from './components/App';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 ReactDOM.render(
-  <App/>,
+  <Provider store={store}>
+    <App/>
+  </Provider>,
   document.getElementById('root'),
 );
