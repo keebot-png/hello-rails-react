@@ -1,1 +1,7 @@
-import 'configure'
+import { configureStore } from "@reduxjs/toolkit";
+
+export const store = configureStore({
+    reducer: {
+        greeting: greeingReducer
+    }
+})
