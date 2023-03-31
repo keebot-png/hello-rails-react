@@ -1,20 +1,15 @@
 import React from 'react';
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { createRoutesFromElements, Route, Router } from 'react-router-dom';
 import Greeting from './greeting';
 
-const router = createBrowserRouter(createRoutesFromElements(
-  <Route>
+const router = createRoutesFromElements(
     <Route path='/' element={<Greeting />} />
-  </Route>
-))
+)
 
 const App = () => {
-
-
   return (
-    
-    <div>App</div>
-  )
+    <Router routes={router} />
+  );
 }
 
 export default App
