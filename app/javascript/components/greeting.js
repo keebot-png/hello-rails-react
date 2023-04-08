@@ -21,6 +21,8 @@ const Greeting = () => {
       dispatch(getGreeting());
     }
   }, [greetStatus, dispatch]);
+  
+  console.log(greet);
 
   return (
   <div>
