@@ -72,5 +72,5 @@ group :test do
 end
 
 gem 'foreman', '~> 0.87.2'
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rack-cors'
+gem 'rubocop', '>= 1.0', '< 2.0'
