@@ -1,35 +1,40 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectGreeting, selectError, selectStatus, getGreeting } from '../redux/greeting/greetingSlice';
+import {
+  selectGreeting, selectError, selectStatus, getGreeting,
+} from '../redux/greeting/greetingSlice';
 
 const Greeting = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const greet = useSelector(selectGreeting);
   const greetStatus = useSelector(selectStatus);
   const greetError = useSelector(selectError);
 
-  const handleClick = () => {
-    dispatch(getGreeting)
-  }
-
-  if(greetError){
-    return <div>Error: {greetError.message}</div>
-  }
-  
   useEffect(() => {
-    if(greetStatus === 'idle'){
+    if (greetStatus === 'idle') {
       dispatch(getGreeting());
     }
   }, [greetStatus, dispatch]);
-  
-  console.log(greet);
+
+  if (greetError) {
+    return (
+      <div>
+        Error:
+        {greetError.message}
+      </div>
+    );
+  }
 
   return (
-  <div>
-    <h2>{greet.data}</h2>
-    <button onClick={handleClick}>Change</button>
-  </div>
-  )
-}
+    <div>
+      <h1>Refresh page to display a random greeting</h1>
+      <h2>
+        Greeing displayed: [
+        {greet.salutations.data}
+        ]
+      </h2>
+    </div>
+  );
+};
 
 export default Greeting;

@@ -43,7 +43,7 @@ This project involves the integration of React and Rails within a single applica
 
 ### Key Features <a name="key-features"></a>
 
-- **Show random greetings**
+- **Show random greetings on the UI that are fetched from the rails API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +104,7 @@ DATABASE_PASSWORD=
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Implement more functionalities**
+- **Implement more functionalities and better UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ If you like this project feel free to star it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the project.
+I would like to thank Microverse for ethis learning opportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

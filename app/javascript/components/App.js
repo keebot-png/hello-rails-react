@@ -1,15 +1,13 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import React from 'react';
-import { createRoutesFromElements, Route, Router } from 'react-router-dom';
-import Greeting from './greeting';
+import { Route, Routes } from 'react-router-dom';
+import Greeting from './components/greeting';
 
-const router = createRoutesFromElements(
-    <Route path='/' element={<Greeting />} />
-)
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Greeting />} />
+    ,
+  </Routes>
+);
 
-const App = () => {
-  return (
-    <Router routes={router} />
-  );
-}
-
-export default App
+export default App;
