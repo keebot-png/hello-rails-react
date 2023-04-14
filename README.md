@@ -75,9 +75,11 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following commands:
 
-`rails s`
+- To run the rails server for the API's run `rails s` and to run the webpack to display React run `yarn build --watch` as stated in the Procfile.dev, located in the root directory.
+
+- Then run the project on localhost:3000, and you should see the greeting displayed as required.
 
 NB: your config/database.yml file should contain the following 
 ```
