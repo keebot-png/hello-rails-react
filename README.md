@@ -79,11 +79,10 @@ To run the project, execute the following command:
 
 `rails s`
 
-NB: You need to create an `env` file for your database credentials
-your env file should contain the following 
+NB: your config/database.yml file should contain the following 
 ```
-DATABASE_USERNAME=
-DATABASE_PASSWORD=
+username= YOUR _DATABASE_NAME || postgres
+password= YOUR _DATABASE_PASSWORD
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,7 +127,7 @@ If you like this project feel free to star it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for ethis learning opportunity.
+I would like to thank Microverse for this learning opportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
